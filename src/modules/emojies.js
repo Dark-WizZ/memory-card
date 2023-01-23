@@ -22,10 +22,10 @@ const emojies = [];
 
 function emojiGen(){
   for(let i=0; i<emoCodes.length; i++){
-    let code = '1F47D';
+    const code=[emoCodes[i]];
     emojies.push({
       emoName: uni2EmoName(code),
-      src: require('../emojies/'+code+'.svg'),
+      src: require(`../emojies/${code}.svg`),
       clicked: false,
     })
   }
