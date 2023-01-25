@@ -72,7 +72,7 @@ function Frame(){
         <div>{cards[2].emoName}</div>
       </div>
     </div>
-    <div>Avoid clicking the same emoji TWICE...</div>
+    <div className='footer'>Avoid clicking the same emoji TWICE...</div>
   </div>
 }
 

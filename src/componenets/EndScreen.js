@@ -5,7 +5,7 @@ function EndScreen(props){
     <Scores score={props.score} hiScore={props.hiScore} />
     <Greeting isWon={props.isWon} />
     <div>You clicked same emoji twice!</div>
-    <button className='replay_btn' onClick={props.replayClk}>replay</button>
+    <button className='replay_btn' onClick={props.replayClk}>Wanna Replay?</button>
   </div>
 }
 

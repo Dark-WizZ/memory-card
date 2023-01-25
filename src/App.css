@@ -60,3 +60,6 @@ html, body, #root, .app, .frame{
   place-items: center;
 }
 
+.footer{
+  padding: 1rem;
+}
