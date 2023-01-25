@@ -1,13 +1,10 @@
 import './App.css';
 import Frame from './componenets/frame';
-import emojies from './modules/emojies';
-
-console.log(emojies)
 
 function App() {
-  return (
+  return <div className='app'>
     <Frame />
-  );
+  </div>;
 }
 
 export default App;

@@ -1,39 +1,62 @@
-.App {
-  text-align: center;
+html, body, #root, .app, .frame{
+  border:none;
+  margin:none;
+  padding:none;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frame{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-content: center;
+  place-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards{
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.scores{
+  display:grid;
+  place-content: center;
+  grid-auto-flow: column;
+  font-weight: bolder;
+  font-size: 2rem;
+  gap:3rem;
+}
+.greet{
+  font-size: 2rem;
+}
+.won{
+  color:Green;
+}
+.lose{
+  color:red;
+}
+.end_screen{
+  background-color: rgba(0, 0, 0, 0.8);
+  color:white;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%; 
+  backdrop-filter:blur(5px);
+  position: absolute;
+}
+.card:hover{
+  background-color: rgba(128, 128, 128, 0.8);
+  color:white;
+  font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  border-radius:1rem;
+  padding:1rem;
+  display: grid;
+  place-items: center;
 }
 

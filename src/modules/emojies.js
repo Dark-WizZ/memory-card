@@ -1,6 +1,7 @@
 
 import uni2EmoName from './unicodeToEmojiName';
 
+
 const emoCodes=[
   '1F47D', '1F601', '1F602',
   '1F603', '1F604', '1F605',
@@ -17,10 +18,8 @@ const emoCodes=[
   '1F976', '1F978', '1F979',
   '1FAE0', '1FAE1', '1FAE3'
 ];
-
-const emojies = [];
-
 function emojiGen(){
+  const emojies = [];
   for(let i=0; i<emoCodes.length; i++){
     const code=[emoCodes[i]];
     emojies.push({
@@ -29,8 +28,7 @@ function emojiGen(){
       clicked: false,
     })
   }
+  return emojies;
 }
 
-emojiGen();
-
-export default emojies;
+export default emojiGen;
