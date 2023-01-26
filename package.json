@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://Dark-WizZ.github.io/memory-cary",
+  "homepage": "http://Dark-WizZ.github.io/memory-card",
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
